@@ -8,5 +8,6 @@ nav:
     - FAST Engine API: services/channel-engine.md
 theme:
   name: dracula
+  logo: assets/logo_eyevinn_256.png
 
 copyright: Copyright &copy; 2023- <a href="https://www.eyevinn.se">Eyevinn Technology AB</a>
