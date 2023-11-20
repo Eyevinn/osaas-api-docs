@@ -1,0 +1,12 @@
+site_name: Eyevinn Open Source Cloud API
+site_url: https://docs.osaas.io
+site_description: API Documentation for Eyevinn Open Source Cloud
+site_author: Eyevinn Technology
+nav:
+  - Home: index.md
+  - APIs:
+    - FAST Engine API: services/channel-engine.md
+theme:
+  name: dracula
+
+copyright: Copyright &copy; 2023- <a href="https://www.eyevinn.se">Eyevinn Technology AB</a>
