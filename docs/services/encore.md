@@ -98,7 +98,7 @@ The address to the API in the test environment is `https://api-encore.stage.osaa
 
 ### Create trial-token
 
-Generate a trial-token in our demo environment. The trial-token limits you to maximum of 3 channels and running in our test environment. Replace `YOUR_ORG` and `YOUR_EMAIL` in the command below.
+Generate a trial-token in our demo environment. The trial-token limits you to maximum of 3 queues and running in our demo environment. Replace `YOUR_ORG` and `YOUR_EMAIL` in the command below.
 
 ```bash
 curl -X 'POST' \
@@ -111,4 +111,4 @@ curl -X 'POST' \
 }'
 ```
 
-In return you get a trial `SAT` that you will be using to create and remove channels in our demo environment.
+In return you get a trial `SAT` that you will be using to create and remove queues in our demo environment.
