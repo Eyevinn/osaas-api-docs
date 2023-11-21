@@ -1,5 +1,9 @@
 Welcome to Eyevinn Open Source Cloud API documentation
 
+Eyevinn Open Source Cloud is a cost- effective way to utilize the benefits of our and our partners open-source software without the upfront costs of hardware or cloud licenses or technical personal. With Open Source Cloud, you don't need to worry about installing and configuring software on your own machines, as the software is delivered and managed in the cloud by the Eyevinn experts.
+
+The Open Source Cloud can be scaled up or down as per your needs, providing greater flexibility and adaptability, and at any point the services could be moved to your own control as the software is open and free.
+
 ## Getting Started
 
 To access the APIs for the services running in Eyevinn Open Source Cloud you need a Service Access Token (SAT). The SATs are unique for each type of service. To obtain an SAT you will be using the Personal Access Token (PAT) that you have previously received by your sales representative at Eyevinn.
