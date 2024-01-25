@@ -1,5 +1,5 @@
 site_name: Eyevinn Open Source Cloud API
-site_url: https://osaas.docs.eyevinn.technology
+site_url: https://api.osaas.io
 site_description: API Documentation for Eyevinn Open Source Cloud
 site_author: Eyevinn Technology
 nav:
@@ -9,7 +9,7 @@ nav:
     - Encore API: services/encore.md
 theme:
   name: dracula
-  logo: assets/logo_eyevinn_256.png
+  logo: assets/logo_osc_512.png
 
 use_directory_urls: false
 
