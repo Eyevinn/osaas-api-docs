@@ -1,6 +1,6 @@
 Welcome to Eyevinn Open Source Cloud API documentation
 
-Eyevinn Open Source Cloud is a cost- effective way to utilize the benefits of our and our partners open-source software without the upfront costs of hardware or cloud licenses or technical personal. With Open Source Cloud, you don't need to worry about installing and configuring software on your own machines, as the software is delivered and managed in the cloud by the Eyevinn experts.
+[Eyevinn Open Source Cloud](https://www.osaas.io) is a cost- effective way to utilize the benefits of our and our partners open-source software without the upfront costs of hardware or cloud licenses or technical personal. With Open Source Cloud, you don't need to worry about installing and configuring software on your own machines, as the software is delivered and managed in the cloud by the Eyevinn experts.
 
 The Open Source Cloud can be scaled up or down as per your needs, providing greater flexibility and adaptability, and at any point the services could be moved to your own control as the software is open and free.
 
