@@ -6,7 +6,7 @@ The Open Source Cloud can be scaled up or down as per your needs, providing grea
 
 ## Getting Started
 
-To access the APIs for the services running in Eyevinn Open Source Cloud you need a Service Access Token (SAT). The SATs are unique for each type of service. To obtain an SAT you will be using the Personal Access Token (PAT) that you have previously received by your sales representative at Eyevinn.
+To access the APIs for the services running in Eyevinn Open Source Cloud you need a Service Access Token (SAT). The SATs are unique for each type of service. To obtain an SAT you will be using the Personal Access Token (PAT) that you have available in the [Eyevinn OSC web console](https://eyevinn.osaas.io).
 
 ### Example: Acquire an SAT for FAST Engine as a Service
 
