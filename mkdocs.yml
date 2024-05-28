@@ -1,9 +1,13 @@
-site_name: Eyevinn Open Source Cloud API
+site_name: Open Source Cloud API
 site_url: https://api.osaas.io
-site_description: API Documentation for Eyevinn Open Source Cloud
+site_description: API Documentation for Open Source Cloud
 site_author: Eyevinn Technology
 nav:
   - Home: index.md
+  - Client Libraries:
+    - Javascript:
+      - Core: sdk/javascript.md
+      - Transcode: sdk/javascript-transcode.md
   - APIs:
     - FAST Engine API: services/channel-engine.md
     - Encore API: services/encore.md
