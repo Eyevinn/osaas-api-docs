@@ -8,6 +8,12 @@ nav:
     - Javascript:
       - Core: sdk/javascript.md
       - Transcode: sdk/javascript-transcode.md
+  - Command-Line Interface:
+    - Usage: cli/usage.md
+    - Commands: 
+      - osc: cli/core.md
+      - osc transcode: cli/transcode.md
+      - osc compare: cli/compare.md
   - APIs:
     - FAST Engine API: services/channel-engine.md
     - Encore API: services/encore.md
