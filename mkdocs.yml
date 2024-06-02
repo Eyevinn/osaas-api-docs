@@ -13,6 +13,7 @@ nav:
     - Commands: 
       - osc: cli/core.md
       - osc transcode: cli/transcode.md
+      - osc pacakger: cli/packager.md
       - osc compare: cli/compare.md
   - APIs:
     - FAST Engine API: services/channel-engine.md

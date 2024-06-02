@@ -20,3 +20,12 @@ Provide AWS credentials as environment variables for the S3 bucket accesses.
   https://testcontent.eyevinn.technology/mp4/stswe-tvplus-promo.mp4 \
   s3://lab-testcontent-store/birme/
 ```
+
+In addition also create HLS and MPEG-DASH streaming package
+
+```bash
+% osc transcode \
+  https://testcontent.eyevinn.technology/mp4/stswe-tvplus-promo.mp4 \
+  s3://lab-testcontent-store/birme/ \
+  s3://lab-testcontent-store/birme/vod
+```
