@@ -39,3 +39,14 @@ This will be translated to the following JSON payload when creating the instance
   }
 }
 ```
+
+### Using Secrets
+
+It is recommended for sensitive data such as API keys or shared secrets to be provided as a reference to a secret variable instead of provided in plain text. Create secret in the web user interface and a secret is scoped to the service it is created for. To refer to a secret you enter `{{secrets.mysecret}}` as the option value, e.g.
+
+```bash
+osc create eyevinn-shaka-packager-s3 \
+  -o AwsAccessKeyId="{{secrets.awsaccesskeyid}}" \
+  -o AwsSecretAccessKey="{{secrets.awssecretaccesskey}}" \
+  -o CmdLineArgs="s3://source/abr s3://dest/vod -i a:audio=snaxax_STEREO.mp4 -i v:3100=snaxax_x264_3100.mp4"
+```
