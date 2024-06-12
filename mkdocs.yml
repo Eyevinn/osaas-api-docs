@@ -15,6 +15,7 @@ nav:
       - osc transcode: cli/transcode.md
       - osc packager: cli/packager.md
       - osc compare: cli/compare.md
+      - osc intercom: cli/intercom.md
   - APIs:
     - FAST Engine API: services/channel-engine.md
     - Encore API: services/encore.md
