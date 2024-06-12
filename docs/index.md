@@ -45,6 +45,7 @@ To call the Open Source Cloud API from a programming language you use client lib
 
 - [@osaas/client-core](https://www.npmjs.com/package/@osaas/client-core)
 - [@osaas/client-transcode](https://www.npmjs.com/package/@osaas/client-transcode)
+- [@osaas/client-intercom](https://www.npmjs.com/package/@osaas/client-intercom)
 
 ## CLI
 
