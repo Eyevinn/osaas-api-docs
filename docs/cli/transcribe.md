@@ -41,3 +41,21 @@ Great streaming tech talks curated from all over the world.
 They said they would prefer blur if I was going like this.
 ...
 ```
+
+And in this example we output to format SRT
+
+```bash
+% osc transcribe -f srt https://testcontent.eyevinn.technology/mp4/stswe-tvplus-promo.mp4
+1
+00:00:00,000 --> 00:00:04,480
+probably the most interesting challenge of the 21st century.
+
+2
+00:00:04,480 --> 00:00:10,100
+StreamingTech TV Plus Money, money, money, money, money.
+
+3
+00:00:10,100 --> 00:00:13,460
+Great streaming tech talks curated from all over the world.
+...
+```
