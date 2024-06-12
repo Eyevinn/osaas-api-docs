@@ -6,7 +6,7 @@ osc intercom [options] [command]
 
 where available `command`s are:
  
- - `list-production`
+ - `list-productions`
  - `create-production`
  - `delete-production`
 
@@ -23,7 +23,7 @@ Find installation [instructions](usage.md) and general instructions on how to us
 To list available productions and lines in each production for an Intercom system called `vg52` you run.
 
 ```
-osc intercom list-production vg52 
+osc intercom list-productions vg52 
 ```
 
 And it will for example output the following:
