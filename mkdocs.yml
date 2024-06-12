@@ -14,6 +14,7 @@ nav:
       - osc: cli/core.md
       - osc transcode: cli/transcode.md
       - osc packager: cli/packager.md
+      - osc transcribe: cli/transcribe.md
       - osc compare: cli/compare.md
       - osc intercom: cli/intercom.md
   - APIs:
