@@ -40,3 +40,15 @@ It will await until the transcoding and the transfer is completed. Once complete
 ```javascript
 await pool.destroy();
 ```
+
+If you also want to package the transcoded files to streaming files and upload to an S3 origin you add the option `packageDestination`, e.g.
+
+```javascript
+await pool.transcode(
+  new URL(
+    'https://testcontent.eyevinn.technology/mp4/stswe-tvplus-promo.mp4'
+  ),
+  new URL('s3://dest/myfiles/'),
+  { packageDestination: new URL('s3://myorigin/myfiles/) }
+);
+```

@@ -8,6 +8,7 @@ nav:
     - Javascript:
       - Core: sdk/javascript.md
       - Transcode: sdk/javascript-transcode.md
+      - Db: sdk/javascript-db.md
   - Command-Line Interface:
     - Usage: cli/usage.md
     - Commands: 
