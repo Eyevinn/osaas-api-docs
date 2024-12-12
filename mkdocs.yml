@@ -7,8 +7,8 @@ nav:
   - Client Libraries:
     - Javascript:
       - Core: sdk/javascript.md
-      - Transcode: sdk/javascript-transcode.md
-      - Db: sdk/javascript-db.md
+      - Open Media Web Services: sdk/javascript-transcode.md
+      - Open Database Web Services: sdk/javascript-db.md
   - Command-Line Interface:
     - Usage: cli/usage.md
     - Commands: 

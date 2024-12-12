@@ -1,12 +1,12 @@
-Welcome to Open Source Cloud API documentation
+Welcome to Eyevinn Open Source Cloud API documentation
 
-[Open Source Cloud](https://www.osaas.io) is a cost- effective way to utilize the benefits of open-source software without the upfront costs of hardware or cloud licenses or technical personal. A share of the revenue is shared with the open source creators. With Open Source Cloud, you don't need to worry about installing and configuring software on your own machines, as the software is delivered and managed in the cloud by the Eyevinn experts.
+[Eyevinn Open Source Cloud](https://www.osaas.io) (OSC) reduces the barrier to get start with open source by reducing the barrier for an open source creator to offer their software as a service. Generated revenue is shared with the open source creator.
 
-The Open Source Cloud can be scaled up or down as per your needs, providing greater flexibility and adaptability, and at any point the services could be moved to your own control as the software is open and free.
+Our goal is to not be evil and to provide the creators with an additional income stream for their projects. Read [Our Pledge to the community](https://docs.osaas.io/osaas.wiki/Our-Pledge.html).
 
 ## Getting Started
 
-To access the APIs for the services running in Open Source Cloud you need a Service Access Token (SAT). The SATs are unique for each type of service. To obtain an SAT you will be using the Personal Access Token (PAT) that you have available in the [web console](https://app.osaas.io).
+To access the APIs for the services running in Eyevinn Open Source Cloud you need a Service Access Token (SAT). The SATs are unique for each type of service. To obtain an SAT you will be using the Personal Access Token (PAT) that you have available in the [web console](https://app.osaas.io).
 
 ### Example: Acquire an SAT for FAST Engine as a Service
 
@@ -41,22 +41,31 @@ To call the Open Source Cloud API from a programming language you use client lib
 
 ### Javascript
 
-[SDK documentation](https://js.docs.osaas.io)
-
 - [@osaas/client-core](https://www.npmjs.com/package/@osaas/client-core)
+- [@osaas/client-services](https://www.npmjs.com/package/@osaas/client-services)
 - [@osaas/client-transcode](https://www.npmjs.com/package/@osaas/client-transcode)
-- [@osaas/client-intercom](https://www.npmjs.com/package/@osaas/client-intercom)
+
+### Golang
+
+- [EyevinnOSC/client-go](https://github.com/EyevinnOSC/client-go)
 
 ## CLI
 
-Open Source Cloud provides a command line tool for communicating with Open Source Cloud. Prerequisite is to have Node installed and then you can install it with NPM (Node package manager).
+Eyevinn Open Source Cloud provides a command line tool for communicating with Open Source Cloud. Prerequisite is to have Node installed and then you can install it with NPM (Node package manager).
 
 ```
-npm install -g @osaas/cli
+% npm install -g @osaas/cli
 ```
 
 For help
 
 ```
-osc -h
+% osc -h
+```
+
+If you don't want to install it and just run it you can use `npx` given that you have Node and NPM installed.
+
+```
+% npx @osaas/cli -v
+4.3.1
 ```

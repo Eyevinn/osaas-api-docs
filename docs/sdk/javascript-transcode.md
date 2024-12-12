@@ -1,8 +1,8 @@
 The Javascript client libraries for Open Source Cloud are implemented in Typescript and for server-side use with Node.
 
-# Transcode Library
+# Open Media Web Services
 
-The Transcode library contains high-level functions for video transcoding in Open Source Cloud. It is implemented on top of the core library and some functions implies use of multiple services active at the same time, which is not eligable on the free tier.
+This library provides high-level functions for web services in Eyevinn Open Source Cloud for media services.
 
 ## Installation
 
@@ -10,45 +10,46 @@ The Transcode library contains high-level functions for video transcoding in Ope
 npm install @osaas/client-transcode
 ```
 
-## Getting started
+## Getting started: VOD
+
+In this example we will create a video on-demand package for streaming using available open web services and the `client-transcode` library.
 
 You need to have a valid context first. See [core library](./javascript.md) for information how that works.
 
-Then you create an Encore Queue Pool. A Queue Pool is a collection of Encore instances. In most cases one queue is sufficient but for large volumes you might want to run jobs in parallell.
-
 ```javascript
-const pool = new QueuePool({ context: ctx });
-await pool.init();
+const ctx = new Context();
 ```
 
-When the pool is initiated the Encore instances are created and also visible in the web user interface.
-
-To then transcode a file `https://testcontent.eyevinn.technology/mp4/stswe-tvplus-promo.mp4` with the default transcoding profile and transfer the resulting files to S3 bucket `s3://dest/myfiles/` you can write.
+Then we will create a pipeline of open web services that we will need.
 
 ```javascript
-await pool.transcode(
-  new URL(
-    'https://testcontent.eyevinn.technology/mp4/stswe-tvplus-promo.mp4'
-  ),
-  new URL('s3://dest/myfiles/'),
-  {}
-);
+const pipeline = await createVodPipeline('sdkexample', ctx);
 ```
 
-It will await until the transcoding and the transfer is completed. Once completed you can delete the pool and instances.
+This will create an SVT Encore instance and an Encore Packager instance and connect these using a shared Redis-compatible queue. In addition it will create a storage for the VOD packages. This means you need to be at least on the Business plan as this requires more than two open web services.
+
+Now we can create a VOD package with the help of this pipeline. 
 
 ```javascript
-await pool.destroy();
+const vod = await createVod(pipeline, 'https://testcontent.eyevinn.technology/mp4/VINN.mp4', ctx);
+console.log(vod);
 ```
 
-If you also want to package the transcoded files to streaming files and upload to an S3 origin you add the option `packageDestination`, e.g.
+Putting these all together we have:
 
 ```javascript
-await pool.transcode(
-  new URL(
-    'https://testcontent.eyevinn.technology/mp4/stswe-tvplus-promo.mp4'
-  ),
-  new URL('s3://dest/myfiles/'),
-  { packageDestination: new URL('s3://myorigin/myfiles/) }
-);
+import { Context } from '@osaas/client-core';
+import {
+  createVod,
+  createVodPipeline
+} from '@osaas/client-transcode';
+
+async function main() {
+  const ctx = new Context();
+  const pipeline = await createVodPipeline('sdkexample', ctx);
+  const vod = await createVod(pipeline, 'https://testcontent.eyevinn.technology/mp4/VINN.mp4', ctx);
+  console.log(vod);
+}
+
+main();
 ```
