@@ -5,10 +5,7 @@ site_author: Eyevinn Technology
 nav:
   - Home: index.md
   - Client Libraries:
-    - Javascript:
-      - Core: sdk/javascript.md
-      - Open Media Web Services: sdk/javascript-transcode.md
-      - Open Database Web Services: sdk/javascript-db.md
+    - Javascript: sdk/javascript.md
   - Command-Line Interface:
     - Usage: cli/usage.md
     - Commands: 
@@ -18,9 +15,6 @@ nav:
       - osc transcribe: cli/transcribe.md
       - osc compare: cli/compare.md
       - osc intercom: cli/intercom.md
-  - APIs:
-    - FAST Engine API: services/channel-engine.md
-    - Encore API: services/encore.md
 theme:
   name: dracula
   logo: assets/logo_osc_512.png
