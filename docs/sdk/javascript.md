@@ -1,5 +1,7 @@
 The Javascript client libraries for Open Source Cloud are implemented in Typescript and for server-side use with Node.
 
+- [SDK reference documentation](https://js.docs.osaas.io)
+
 # Core Library
 
 The core library includes general functionality to create, list and delete service instances or jobs. They are generic and can be used with any type of service in Open Source Cloud.
